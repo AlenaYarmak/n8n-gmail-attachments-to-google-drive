@@ -26,6 +26,7 @@ Retrieves the full content of the email, including metadata and attachments.
 4. **Edit Fields**
 - Extracts all attachment keys from the email’s binary data.
 - Stores the `message_id` for later use.
+  
 `attachments: {{ Object.values($('Gmail Trigger').item.binary.keys()) }}`
 
 `message_id: {{ $json.id }}`
